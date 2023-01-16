@@ -9,6 +9,7 @@ public class HelloController {
 
     @Value("${app.message}")
     String message;
+    String hola;
 
     @GetMapping("/hola")
     public String holaMundo(){ return "hola mundo, how are you? "+message;}
